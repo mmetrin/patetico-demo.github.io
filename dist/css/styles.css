@@ -28,7 +28,9 @@
     background: rgb(231, 167, 143);
 }
 
-
+body.lock{
+    overflow:hidden;
+}
 
 /* preloader */
 .preloader {
