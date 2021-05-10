@@ -1,3 +1,10 @@
+//прелоадер
+$(window).on('load', function () {
+    $preloader = $('.preloader'),
+        $loader = $preloader.find('.loader');
+    $loader.fadeOut(10000);
+    $preloader.delay(1000).fadeOut('slow');
+});
 
 //popup модальные окна
 const popupLinks = document.querySelectorAll('.popup-link');
@@ -27,7 +34,7 @@ if (popupCloseIcon.length > 0) {//проверяем, есть ли объект
         el.addEventListener('click', function (e) {//вешаем событие
             popupClose(el.closest('.popup'));//отправляем в функцию popupClose объект, который является ближайшим родителем с классом popup
             e.preventDefault();//запрещаем перезагружать страницу при клике на ссылку
-        })
+        });
     }
 }
 
@@ -67,6 +74,7 @@ function bodyLock() {
             el.style.paddingRight = lockPaddingValue;
         }
     }
+    //ширина скролла добавляется у тебя двойная
     body.style.paddingRight = lockPaddingValue;
     body.classList.add('lock');
 
@@ -103,4 +111,5 @@ document.addEventListener('keydown', function (e) {
         popupClose(popupActive);
     }
 });
+
 
