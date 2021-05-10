@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="..\src\css\styles-dist.css">
+
+</head>
+
+<body vocab="http://schema.org/" id="page-top">
+
+    <div class="wrapper">
+<!-- <div class="preloader"><div class="loader"></div></div> -->
+
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="" class="popup__close close-popup"><i class="fas fa-times"></i></a>
+                    <div class="form-vertical">
+
+                        <div class="popup__title">Авторизация</div>
+                        <hr noshade />
+                        <div class="popup__text">
+                            <!-- @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                            {
+                            @Html.AntiForgeryToken() -->
+                            <div class="form-horizontal span-aut">
+
+                                <div class="form-group">
+                                    <div>
+                                        <input placeholder="Введите эл. почту" type="email" class="" name="email"
+                                            id="InpLogin" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input placeholder="Введите пароль" type="password" class="" name="password"
+                                            id="InpPass" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <input type="button" value="Войти" class="input-btn" id="checkUser" />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- } -->
+
+                            <div class="a-reg">
+                                <p>У вас нет учетной записи?</p> <a href="#popup_2"
+                                    class="popup-link">Зарегистрируйтесь!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup_2" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="" class="popup__close close-popup"><i class="fas fa-times"></i></a>
+                    <div class="popup__title">Регистрация</div>
+                    <hr noshade />
+                    <div class="popup__text">
+                        <!-- @using (Html.BeginForm("Create", "Home", FormMethod.Post))
+                        {
+                        @Html.AntiForgeryToken() -->
+                        <div class="form-vertical-reg">
+                            <div class="form-horizontal-reg reg-column-1">
+                                <input placeholder="Имя" type="text" class="" name="name" id="InpName" />
+                                <input placeholder="Фамилия" type="text" class="" name="surname" id="InpSurname" />
+                                <input placeholder="Отчество" type="text" class="" name="patronymic"
+                                    id="InpPatronymic" />
+                                <input placeholder="Номер телефона" type="text" class="" name="phone" id="InpPhone" />
+                            </div>
+                            <div class="form-horizontal-reg reg-column-2">
+
+                                <input placeholder="Дата рождения" type="text" class="datepicker-here"
+                                    name="date_of_birth" id="InpDate" data-position='right top'
+                                    data-date-format="yyyy-mm-dd" />
+                                <input placeholder="Email" type="email" class="" name="email" id="InpEmail" />
+                                <input placeholder="Пароль" type="password" class="" name="password" id="InpPassword" />
+                                <input placeholder="Повтор пароля" type="password" class="" name="passwordrepeat"
+                                    id="RepeatPass" />
+                            </div>
+                        </div>
+                        <div class="inp-btn">
+                            <input class="input-btn" type="button" value="Зарегистрироваться" id="createUser" />
+                        </div>
+                        <div class="hr-bottom">
+                            <hr noshade style="margin-bottom:0.5em; height:0.01px" />
+                            <p>*все поля обязательны для заполнения</p>
+                        </div>
+                        <!-- } -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg"
+                        alt="..." /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Меню
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">О&nbsp;нас</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#measurements-id">Каталог</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviews-sect-id">Отзывы</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact-id">Контакты</a></li>
+                        <li class="nav-item" id="nav-item-margin"><a class="nav-link js-scroll-trigger"
+                                id="nav-item-margin icon-basket" href="#">Корзина&nbsp;<i
+                                    class="fas fa-shopping-basket"></i></a></li>
+                        <li class="nav-item nav-none" id="nav-item-margin"><a class="nav-link js-scroll-trigger popup-link"
+                                id="nav-item-margin user " href="#popup"><i class="fas fa-user"></i></a></li>
+                        <li class="nav-item nav-none-909" id="nav-item-margin"><a class="nav-link js-scroll-trigger user popup-link"
+                                id="nav-item-margin" href="#popup">Авторизация</a></li>
+                        <!-- <li class="nav-item"><a id="contact-hidden" class="nav-link js-scroll-trigger"
+                            href="tel:79130056985">+7 (913) 005
+                            69 85</a></li>
+ -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container" id="container-1240">
+                <div class="header-column">
+                    <div class="masthead-subheading"> Воздушные <br>
+                        кондитерские изделия <br>
+                        из натуральных продуктов</div>
+                    <div class="masthead-heading">
+                        <h5 class="h5-spacing">Превосходные десерты по сладкой цене с удобной</h5>
+                        <h5 class="h5-bigspacing">доставкой специально для Вас в Patetico&Dolce!</h5>
+                    </div>
+                    <div class="masthead-heading-2">
+                        <h5 class="h5-spacing-2">Превосходные десерты по&nbsp;сладкой&nbsp;цене с удобной
+                            доставкой&nbsp;специально для&nbsp;Вас&nbsp;в&nbsp;Patetico&Dolce!</h5>
+                    </div>
+                    <a class="btn btn-primary btn-xl  js-scroll-trigger" href="#actuality">Сделать заказ</a>
+                </div>
+            </div>
+        </header>
+        <section class="section-advantages" id="using">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Почему клиенты выбирают Patetico?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="assets/img/icon-cake-1.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Свежие ингридиенты</h4>
+                                <p class="text-muted">Наши поставщики не готовят впрок, потому что мы считаем, что
+                                    лучший
+                                    десерт – свежий десерт.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="assets/img/icon-cake-2.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Лучшие кондитеры</h4>
+                                <p class="text-muted">Каждый десерт делается вручную влюбленными в свое дело людьми.
+                                    Мы любим, когда красиво.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="assets/img/icon-cake-3.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3 ">Связь с клиентом</h4>
+                                <p class="text-muted">Мы уважаем наших покупателей и уделяем особое внимание подготовке
+                                    абсолютно каждого заказа.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="about">
+                <div class="container">
+                    <div class="header-column">
+                        <div class="using-subheading text-center">
+                            <h2 class="section-heading">О нашей компании</h2>
+                        </div>
+                        <div class="using-heading">
+                            <h5 class="">Любимым делом мы занимаемся с 1991 года! <br>
+                                За это время сотни тысяч человек разделили с нами
+                                самые&nbsp;счастливые и радостные моменты своей жизни.</h5>
+                            <h5 class="">Наши сладости из натуральных ингредиентов
+                                готовы&nbsp;порадовать&nbsp;Вас и Ваших близких!
+                            </h5>
+                            <h5 class="">
+                                Запасайтесь десертом, оформляйте заказ&nbsp;сейчас!
+                            </h5>
+                        </div>
+                        <a class="btn btn-primary btn-xl  js-scroll-trigger" href="#actuality">Перейти к каталогу</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section-reviews" id="measurements">
+            <div class="wrap">
+                <!-- Контент -->
+                <div class="container text-center" id="measurements-id">
+                    <div class="text-center">
+                        <h2 class="section-heading">Наш ассортимент</h2>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="assets/img/cake-7.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Торт "Ореховый раф"</h4>
+                                <h3>999<i class="fas fa-ruble-sign"></i></h3>
+                                <a href="#">
+                                    <p class="text-right">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/img/cake-8.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Торт с карамелью</h4>
+                                <h3>980<i class="fas fa-ruble-sign"></i></h3>
+                                <a href="#">
+                                    <p class="text-right">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/img/cake-6.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Трюфели с апельсином</h4>
+                                <h3>320<i class="fas fa-ruble-sign"></i></h3>
+                                <a href="#">
+                                    <p class="text-right">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/img/cake-9.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Торт "Праздничный"</h4>
+                                <h3>460<i class="fas fa-ruble-sign"></i></h3>
+                                <a href="#">
+                                    <p class="text-right">Подробнее ></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <h6>Перейти к каталогу..</h6>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-advantages" id="actuality">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Доставка и оплата</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="assets/img/icon-delivery-1.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Оформите заказ</h4>
+                                <p class="text-muted">Наш менеджер свяжется с Вами для <br> уточнения деталей в течение
+                                    15
+                                    минут <br> после подтверждения заказа!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="assets/img/icon-delivery-2.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3">Совершите оплату</h4>
+                                <p class="text-muted">Заказ можно удобно и комфортно <br> оплатить наличными при <br>
+                                    его
+                                    получении!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-row">
+                            <img src="assets/img/icon-delivery-3.png" alt="">
+                            <div class="header-column">
+                                <h4 class="my-3 ">Получите сладости</h4>
+                                <p class="text-muted">Доставка осуществляется качественно, <br> быстро и бесплатно в
+                                    любую
+                                    точку <br> самовывоза Новосибирска!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rev" id="reviews-sect">
+            <div class="wrap">
+                <!-- Контент -->
+                <div class="container text-center" id="reviews-sect-id">
+                    <div class="text-center">
+                        <h2 class="section-heading">Отзывы наших покупателей</h2>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__item">
+                            <img src="assets/img/rev-1.jpg" alt="">
+                            <div class="slide-rev">
+                                <div class="header-column">
+                                    <h4 class="my-2">Иван Иванов</h4>
+                                    <p class="text-muted">Заказали в качестве подарка на день рождения&nbsp;чудесные
+                                        маффины с корицей! Могу отметить их превосходную кремовую начинку!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/img/rev-2.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Маша Машева</h4>
+                                <p class="text-muted">Приобрели в магазине несколько мини-пирожных и&nbsp;остались очень
+                                    довольны. Patetico&nbsp;-&nbsp;это&nbsp;прекрасное завершение праздника!</p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/img/rev-3.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Лера Данина</h4>
+                                <p class="text-muted">Магазин, как обычно, порадовал качественным сервисом и быстрой
+                                    доставкой. Вкусные сладости и чудесная связь с&nbsp;клиентом!</p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <img src="assets/img/rev-4.jpg" alt="">
+                            <div class="header-column">
+                                <h4 class="my-2">Катя Васина</h4>
+                                <p class="text-muted">Привет! Очень порадовала начинка десерта“Царский”. Советую
+                                    абсолютно каждому попробовать этот шедевр вкуса самим!
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <h6>Перейти к каталогу..</h6>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Контакты</h2>
+                    </div>
+                </div>
+                <div class="row" id="contact-id">
+                    <div class="col-lg-12 lrgr">
+                        <address itemscope="" itemtype="http://schema.org/Organization">
+
+                            <span itemprop="name" class="col-12">Patetico&Dolce</span>
+                            <br>
+
+                            <span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"
+                                class="row">
+
+                                <span class="col-12">
+                                    Адрес:&nbsp;<span itemprop="postalCode">630017</span>,
+                                    г.&nbsp;<span itemprop="addressLocality">Новосибирск</span>,
+                                    <span itemprop="streetAddress">ул.&nbsp;Военная,&nbsp1</span>
+                                    <br>
+                                </span>
+
+                                <span class="col-12">
+                                    Телефон:
+                                    <a href="tel:79137660987"><span itemprop="telephone">+7 913 005 69 85</span></a>
+                                    <span itemprop="hoursAvailable" itemscope=""
+                                        itemtype="http://schema.org/OpeningHoursSpecification">(<span
+                                            itemprop="opens">10:00</span>&nbsp;-&nbsp;<span
+                                            itemprop="closes">19:00</span> по Новосибирскому времени GMT+7)</span>
+                                    <br>
+                                </span>
+
+                                <span class="col-12">
+                                    Электронная почта:
+                                    <a href="mailto:contact@itms.pro"><span
+                                            itemprop="email">contact@pateticosweetshop@gmail.com</span></a>
+                                    <br>
+                                </span>
+
+                            </span>
+
+                        </address>
+
+                        <!-- <iframe class="img-fluid"src="https://yandex.ru/map-widget/v1/?um=constructor%3A12c082553d8e42cb6d1e22f365c0c1a36c9cedf166a2bd8aba078ad74a2aaa91&amp;source=constructor" width="900" height="476" frameborder="0"></iframe> -->
+
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c1e6ce4055effe4c90a06b1307fc54990443ac08679c7a8e25e51621ee189cd&amp;width=85%&amp;height=538&amp;lang=ru_RU&amp;scroll=true">
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 offset-lg-1 text-lg-left">
+                        &copy; <script>
+                            document.write(new Date().getFullYear());
+
+                        </script>. ООО ”Patetico&Dolce”, Новосибирск
+
+                        <!-- This script automatically adds the current year to your website footer-->
+                        <!-- (credit: https://updateyourfooter.com/)-->
+
+                    </div>
+
+                    <!-- <div class="col-lg-4 text-lg-right">
+                    <a class="mr-3" href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a>
+                </div> -->
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Подключаем слайдер Slick -->
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Подключаем файл скриптов -->
+    <script src="slick-1.8.1/slick/slick.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
